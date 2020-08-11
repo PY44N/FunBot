@@ -1,5 +1,6 @@
 //Commands
 const HelpCmd = require('./cmds/Help')
+const CreditsCmd = require('./cmds/Credits')
 
 var CMDS = {}
 
@@ -11,6 +12,9 @@ CMDS.Process = function(msg) {
     let arguments = splitCommand.splice(1)
     if (primaryCommand == "help") {
         HelpCmd.Run(msg, arguments)
+    }
+    if (primaryCommand == "credits") {
+        CreditsCmd.Run(msg, arguments)
     }
 }
 
