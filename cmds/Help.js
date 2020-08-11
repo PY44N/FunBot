@@ -1,21 +1,6 @@
-const Discord = require('discord.js')
+const Embed = require('../util/Embed')
 
-const HelpEmbed = new Discord.MessageEmbed()
-    .setColor('#0099ff')
-    .setTitle('Fun Bot Help')
-    .setAuthor('Fun Bot', '../img/Icon.png')
-    .setDescription('Shows you the commands you are able to use with Fun Bot')
-    .setThumbnail('https://i.imgur.com/wSTFkRM.png')
-    .addFields(
-        { name: 'Regular field title', value: 'Some value here' },
-        { name: '\u200B', value: '\u200B' },
-        { name: 'Inline field title', value: 'Some value here', inline: true },
-        { name: 'Inline field title', value: 'Some value here', inline: true },
-    )
-    .addField('Inline field title', 'Some value here', true)
-    .setImage('https://i.imgur.com/wSTFkRM.png')
-    .setTimestamp()
-    .setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
+const HelpEmbed = Embed.Create('Help', { name: '`:)help`', value: 'Shows You All The Commmands You Can Use With Fun Bot'})
 
 var cmd = {}
 
