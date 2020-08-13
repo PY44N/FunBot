@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 var fs = require('fs');
 
-const CMDS = require('./commands')
+const Command = require('./commands')
 
 //Bot Init
 client.on('ready', () => {
@@ -14,7 +14,7 @@ client.on('ready', () => {
 client.on('message', (msg) => {
     if (msg.author != client.user) {
         if  (msg.content.startsWith(":)")) {
-            CMDS.Process(msg)
+            Command(msg)
         }
     }
 })
