@@ -15,7 +15,7 @@ var CMDS = function(msg) {
     if (primaryCommand == "credits") {
         CreditsCmd(msg, arguments)
     }
-    if (primaryCommand == "gen") {
+    if (primaryCommand == "overwatchgen") {
         OverWatchHeroGenCmd(msg, arguments)
     }
 }
