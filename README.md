@@ -6,7 +6,7 @@ If you wish to help develop Fun Bot please feel free to make a pull request with
 
 ## To Do
 
-### Commands
+### Commands to add
 - [ ] 8ball
 - [ ] Joke
 - [ ] Meme
