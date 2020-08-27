@@ -11,3 +11,4 @@ If you wish to help develop Fun Bot please feel free to make a pull request with
 - [ ] Joke
 - [ ] Meme
 - [ ] Dice Roll
+- [ ] Rock Paper Scissors
